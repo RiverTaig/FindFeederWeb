@@ -1,0 +1,8 @@
+C:\River\Code\FindFeeder\NetworkExplorer\bin\x86\Debug\NetworkExplorer.dll
+C:\River\Code\FindFeeder\NetworkExplorer\bin\x86\Debug\NetworkExplorer.pdb
+C:\River\Code\FindFeeder\NetworkExplorer\bin\x86\Debug\NetworkExplorer.tlb
+C:\River\Code\FindFeeder\NetworkExplorer\obj\x86\Debug\NetworkExplorer.csprojResolveAssemblyReference.cache
+C:\River\Code\FindFeeder\NetworkExplorer\obj\x86\Debug\NetworkExplorer.DoTrace.resources
+C:\River\Code\FindFeeder\NetworkExplorer\obj\x86\Debug\NetworkExplorer.csproj.GenerateResource.Cache
+C:\River\Code\FindFeeder\NetworkExplorer\obj\x86\Debug\NetworkExplorer.dll
+C:\River\Code\FindFeeder\NetworkExplorer\obj\x86\Debug\NetworkExplorer.pdb

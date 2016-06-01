@@ -1,0 +1,13 @@
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\bin\AcmeUtilitiesModules.dll
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\bin\AcmeUtilitiesModules.pdb
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\AcmeUtilitiesModules.dll
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\AcmeUtilitiesModules.pdb
+C:\River\Code\AcmeElectric\Viewer\HTML5\HTML5ViewerModules\bin\AcmeUtilitiesModules.dll
+C:\River\Code\AcmeElectric\Viewer\HTML5\HTML5ViewerModules\bin\AcmeUtilitiesModules.pdb
+C:\River\Code\AcmeElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\AcmeUtilitiesModules.dll
+C:\River\Code\AcmeElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\AcmeUtilitiesModules.pdb
+C:\River\Code\AcmeElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\AcmeUtilitiesModules.csprojResolveAssemblyReference.cache
+C:\River\Code\AcmeElectric\ACMECustomModules\bin\AcmeUtilitiesModules.dll
+C:\River\Code\AcmeElectric\ACMECustomModules\bin\AcmeUtilitiesModules.pdb
+C:\River\Code\AcmeElectric\ACMECustomModules\obj\Debug\AcmeUtilitiesModules.dll
+C:\River\Code\AcmeElectric\ACMECustomModules\obj\Debug\AcmeUtilitiesModules.pdb

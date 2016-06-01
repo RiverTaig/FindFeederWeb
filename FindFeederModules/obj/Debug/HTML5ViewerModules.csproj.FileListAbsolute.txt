@@ -1,0 +1,10 @@
+C:\River\Code\BarcodeScanner\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.csprojResolveAssemblyReference.cache
+C:\River\Code\BarcodeScanner\Viewer\HTML5\HTML5ViewerModules\bin\HTML5ViewerModules.dll
+C:\River\Code\BarcodeScanner\Viewer\HTML5\HTML5ViewerModules\bin\HTML5ViewerModules.pdb
+C:\River\Code\BarcodeScanner\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.dll
+C:\River\Code\BarcodeScanner\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.pdb
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\bin\HTML5ViewerModules.dll
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\bin\HTML5ViewerModules.pdb
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.csprojResolveAssemblyReference.cache
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.dll
+C:\River\Code\ApexElectric\Viewer\HTML5\HTML5ViewerModules\obj\Debug\HTML5ViewerModules.pdb

@@ -1,0 +1,172 @@
+﻿<div class="FindFeeder-module-view">
+    <div class="helloOffset">
+        <br />
+        <label class="labelText" id="lblSectionHandler">Select a Feeder </label><br /><br />
+        <div id="the-basics">
+            <input id="cboFindFeederFeederList" class="typeahead" type="text" placeholder="Feeders">
+            <img class="allignedImage" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/arrow-right-24.png" id="btnGetJson" />
+        </div>
+        <div>
+            <!--
+            <select id="cboFindFeederFeederList" style="width:70%">
+
+            </select>
+            <img class="allignedImage" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/arrow-right-24.png" id="btnGetJson" />-->
+            <br />
+            <div>
+                <span>
+                    <img class="allignedImage" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/green_rot.gif" style="display:none;margin-right:5px;" id="imgSpinner" />
+                    <label id="findFeederSelectedFeeder" data-binding="{@text: selectedFeeder}"></label>
+                </span>
+            </div>
+            <br />
+        </div>
+        <div id="accordionControl" class="accordion">
+            <div class="container accordion-section">
+
+                <label class="sectionHeader accordion-section-title" href="#accLocation" id="lblSectionHandler">VIEW </label>
+                <div id="accLocation" class="accordion-section-content">
+                    <div>
+                        <label class="labelText">Feeder Color: </label><input id="downstreamColor" style="width:35px;height:35px;" value="#FF3311" type="color" data-binding="{@value: feederColor}" />
+                    </div>
+                    <div>
+                        <label class="lblAutoZoom">
+                            <img class="showAutoZoomBox off" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/box.png" />
+                            <img class="showAutoZoom" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/tick.png" />
+                            Auto-Zoom to Feeder
+                        </label>
+                        <img class="allignedImage" style="margin-left:5px;" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/ZoomTo.png" id="btnZoomTo" />
+                    </div><br />
+                    <div>
+                        <label class="lblBufferSize">Buffer Size: </label>
+                        <input id="numBuffer" class="smallTextBox" type="number" value="25" data-binding="{@value: numBufferSize}" min="1" max="30" />
+                        <br />
+                        <input type="button" class="largeButton" id="btnClear" value="Clear" />
+                        <!--
+                    <label class="lblShowArrows">
+                        <img class="showArrowsBox" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/box.png"  />
+                        <img class="showArrows off" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/tick.png"  />
+                        Show Flow Arrows
+                    </label>-->
+                    </div><br />
+                </div>
+            </div>
+            <div class="container accordion-section">
+                <label class="sectionHeader accordion-section-title" href="#accTieDevices">TIE DEVICES</label>
+                <div id="accTieDevices" class="accordion-section-content">
+                    <label class="labelText">Select Tie Device</label>
+                    <div>
+                        <select id="cboTieDevices">
+                            <!--<option value="x" contextmenu="x">SW1234 | ABC - DEF</option>
+                        <option value="y" contextmenu="y">SW1235 | ABC - DEF</option>
+                        <option value="z" contextmenu="z">SW1236 | ABC - DEF</option>-->
+                        </select>
+                        <img class="allignedImage" id="btnZoomToTie" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/ZoomInOut.png" />
+                        <!--<img class="allignedImage" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/hand.png" />-->
+
+                    </div>
+                    <!--<div id="tieDeviceAttributes">Attributes of selected Tie Device: <span id="attributesOfText">---</span></div>-->
+                    <div id="table">
+                        <table class="findFeederTable firstChildBold" border="0">
+                            <th>FIELD</th>
+                            <th>VALUE</th>
+                            <tr><td>FacilityID</td><td><label id="lblTieDeviceFacilityID" data-binding="{@text: tieDeviceFacilityID}"></label></td></tr>
+                            <tr><td>FeederIDs</td><td><label id="lblTieDeviceFeederIDs" data-binding="{@text: tieDeviceFeederIDs}"></label></td></tr>
+                            <tr><td>Address</td><td><label id="xxx" data-binding="{@text: tieDeviceAddress}"></label></td></tr>
+                            <!--<tr><td>X,Y</td><td><label data-binding="{@text: tieDeviceXY}"></label></td></tr>-->
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container accordion-section">
+                <label class="sectionHeader accordion-section-title" href="#accLoad">LOAD</label>
+                <div id="accLoad" class="accordion-section-content">
+                    <label class="labelText">Load Downstream from Source</label><br />
+                    <div id="table">
+                        <table class="findFeederTable firstChildBold" border="0">
+                            <th>PHASE</th>
+                            <th>KVA</th>
+                            <tr><td>A</td><td><label data-binding="{@text: ffLoadA}"></label></td></tr>
+                            <tr><td>B</td><td><label data-binding="{@text: ffLoadB}"></label></td></tr>
+                            <tr><td>C</td><td><label data-binding="{@text: ffLoadC}"></label></td></tr>
+                            <tr><td>TOTAL</td><td><label data-binding="{@text: ffLoadTotal}"></label></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container accordion-section">
+                <label class="sectionHeader accordion-section-title" href="#accConductor">CONDUCTOR</label>
+                <div id="accConductor" class="accordion-section-content">
+                    <label class="labelText">Conductor Downstream from Source</label><br />
+                    <div id="table">
+                        <table class="findFeederTable firstChildBold" border="0">
+                            <th>Type</th>
+                            <th>Overhead</th>
+                            <th>Underground</th>
+                            <th>Total</th>
+                            <tr><td>Primary</td><td><label data-binding="{@text: ffPriOH}"></label></td><td><label data-binding="{@text: ffPriUG}"></label></td><td><label data-binding="{@text: ffPriTotal}"></label></td></tr>
+                            <tr><td>Secondary</td><td><label data-binding="{@text: ffSecOH}"</label></td><td><label data-binding="{@text: ffSecUG}"></label></td><td><label data-binding="{@text: ffSecTotal}"></label></td></tr>
+                            <tr><td>TOTALS</td><td><label data-binding="{@text: ffOHTotal}"></td><td><label data-binding="{@text: ffUGTotal}"></label></td><td><label data-binding="{@text: ffConductorTotal}"></label></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container accordion-section">
+                <label class="sectionHeader accordion-section-title" href="#accCustomers">CUSTOMERS</label>
+                <div id="accCustomers" class="accordion-section-content">
+                    <label class="labelText">Customers Downstream from Source</label><br />
+                    <div id="table">
+                        <table class="findFeederTable firstChildBold" border="0">
+                            <th>PHASE</th>
+                            <th>Customers</th>
+                            <tr><td>A</td><td><label data-binding="{@text: ffCustomersA}"></label></td></tr>
+                            <tr><td>B</td><td><label data-binding="{@text: ffCustomersB}"></label></td></tr>
+                            <tr><td>C</td><td><label data-binding="{@text: ffCustomersC}"></label></td></tr>
+                            <tr><td>TOTAL</td><td><label data-binding="{@text: ffCustomersTotal}"></td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="container accordion-section">
+                <label class="sectionHeader accordion-section-title" href="#accFeederTrace">FLOW DIRECTION</label>
+                <div id="accFeederTrace" class="accordion-section-content">
+                    <div>
+                        <label class="labelText">Upstream Color: </label><input id="upstreamColor" style="width:35px;height:35px;" type="color" value="#1122FF" data-binding="{@value: upstreamColor}" />
+                        <br />
+                        <label class="labelText">Downstream Color: </label><input id="downstreamColor" style="width:35px;height:35px;" type="color" value="#1122FF" data-binding="{@value: downstreamColor}" />
+                        <br />
+                        <div>
+                            <label class="lblTraceUpDown">
+                                <!--lblShowService-->
+                                <img class="traceUpDownBox" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/box.png" />
+                                <img class="traceUpDown off" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/tick.png" />
+                                Trace Up/Downstream From Click Point
+                            </label>
+                        </div>
+                        <div>
+                            <label class="lblZoomToUpstream">
+                                <!--lblShowService-->
+                                <img class="zoomToUpstreamBox" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/box.png" />
+                                <img class="zoomToUpstream off" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/tick.png" />
+                                Auto-Zoom to Upstream Results
+                            </label>
+                        </div>
+                        <div>
+                            <label class="lblZoomToDownstream">
+                                <!--lblShowService-->
+                                <img class="zoomToDownstreamBox" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/box.png" />
+                                <img class="zoomToDownstream off" src="../Geocortex/Essentials/ArcFMWeb450/REST/sites/Find_Feeders/Viewers/Find_Feeders/VirtualDirectory/Resources/Images/Custom/tick.png" />
+                                Auto-Zoom to Downstream Results
+                            </label>
+                        </div>
+                    </div>
+                    <!--<div id="Buttons">
+                    <input type="button" class="largeButton" id="btnFeederTrace" value="Tap on Map" />
+                </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

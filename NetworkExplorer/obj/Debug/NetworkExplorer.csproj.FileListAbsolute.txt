@@ -1,0 +1,10 @@
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\obj\Debug\NetworkExplorer.DoTrace.resources
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\obj\Debug\NetworkExplorer.csproj.GenerateResource.Cache
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\bin\Debug\NetworkExplorer.dll
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\bin\Debug\NetworkExplorer.pdb
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\bin\Debug\Miner.Framework.Engine.dll
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\bin\Debug\Miner.Geodatabase.Engine.dll
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\obj\Debug\NetworkExplorer.csprojResolveAssemblyReference.cache
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\obj\Debug\NetworkExplorer.dll
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\obj\Debug\NetworkExplorer.pdb
+C:\Temp\09 - BuildingCustomTraces\NetworkExplorer\bin\Debug\NetworkExplorer.tlb

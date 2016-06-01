@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Profile Key="FindFeederModules" Library="true">
+  <Code DojoRemoveRequires="Modules\">
+    <Include Path="Modules\**\*.js" />
+    <Include Path="Resources\TSout\*.js" />
+  </Code>
+  <Markup>
+    <Include Path="Modules\**\*.html" />
+  </Markup>
+  <Styles>
+    <Include Path="Modules\**\*.css" />
+  </Styles>
+</Profile>
+

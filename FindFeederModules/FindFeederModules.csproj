@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{5D10D914-4C05-4271-8A7C-A03A25FAAC79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Modules\FindFeeder\colors.js" />
+    <Content Include="Modules\FindFeeder\defaults.css" />
+    <Content Include="Modules\FindFeeder\demo.css" />
+    <Content Include="Modules\FindFeeder\FindFeederModule.css" />
+    <Content Include="Modules\FindFeeder\FindFeederView.html" />
+    <Content Include="Modules\FindFeeder\index.js" />
+    <Content Include="Modules\FindFeeder\JavaScript1.js" />
+    <Content Include="ResourceManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Modules\FindFeeder\FindFeederModule.ts" />
+    <TypeScriptCompile Include="Modules\FindFeeder\FindFeederView.ts" />
+    <TypeScriptCompile Include="Modules\FindFeeder\FindFeederViewModel.ts" />
+    <TypeScriptCompile Include="Modules\FindFeeder\typeahead.d.ts" />
+    <TypeScriptCompile Include="Utilities\Utilities.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Compiled\" />
+    <Folder Include="Resources\Libs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>AcmeUtilitiesModules</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52412/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptOutFile>.\Resources\TSout\AcmeUtilities_Modules_ts_out.js</TypeScriptOutFile>
+    <TypeScriptGeneratesDeclarations>true</TypeScriptGeneratesDeclarations>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptOutFile>.\Resources\TSout\BarcodeScanner_Modules_ts_out.js</TypeScriptOutFile>
+    <TypeScriptGeneratesDeclarations>true</TypeScriptGeneratesDeclarations>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>Java -jar "$(ProjectDir)Resources\Tools\ResourceCompilerTool.jar" "$(ProjectDir)ResourceManifest.xml" "$(ProjectDir)\" "FindFeederModules" "$(ProjectDir)Resources\Compiled\FindFeederModules_out.js"
+
+xcopy  /E /Y /R "$(ProjectDir)Resources\Compiled\*.*" "C:\Program Files (x86)\SchneiderElectric\ArcFM Web\ArcFMWeb450\REST Elements\Sites\Find_Feeders\Viewers\Find_Feeders\VirtualDirectory\Resources\Compiled"
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,6 @@
+C:\River\Code\FindFeeder\FindFeederModules\bin\FindFeederModules.dll.config
+C:\River\Code\FindFeeder\FindFeederModules\bin\FindFeederModules.dll
+C:\River\Code\FindFeeder\FindFeederModules\bin\FindFeederModules.pdb
+C:\River\Code\FindFeeder\FindFeederModules\obj\Debug\FindFeederModules.dll
+C:\River\Code\FindFeeder\FindFeederModules\obj\Debug\FindFeederModules.pdb
+C:\River\Code\FindFeeder\FindFeederModules\obj\Debug\FindFeederModules.csprojResolveAssemblyReference.cache
